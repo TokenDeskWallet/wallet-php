@@ -1,11 +1,6 @@
 <?php
 
-require_once('../lib/TokenDesk.php');
-
-$projectId = 14996;
-
-$tokenDesk = new \TokenDesk\TokenDesk();
-
+require_once('init.php');
 
 if(!$_POST['submit']){
     // get project details required to display payment form

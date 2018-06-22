@@ -2,8 +2,7 @@
     <span class="primary-currency">1 <?php echo $project->data->token_name; ?></span>
     <span class="eq">=</span>
     <?php foreach ($project->rates as $key => $value) { ?>
-        <span
-            class="other-currency"><?php echo $value->currency ?><?php echo ' ' ?><?php echo $value->rate ?></span>
+        <span class="other-currency"><?php echo $value->currency ?><?php echo ' ' ?><?php echo $value->rate ?></span>
     <?php } ?>
 
 </div>

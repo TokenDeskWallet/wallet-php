@@ -1,8 +1,7 @@
 <?php
 
-require_once('../lib/TokenDesk.php');
+require_once('init.php');
 
-$tokenDesk = new \TokenDesk\TokenDesk();
 
 /*
  * Using this ajax proxy in order not to send Access token from frontend.

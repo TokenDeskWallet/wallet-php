@@ -5,7 +5,7 @@ class TokenDesk
 {
     public static $base_path = 'https://wallet.tokendesk.io';
 
-    public static $auth_token = 'YOUR_AUTH_TOKEN';
+    public static $auth_token;
 
     public static $project_url = '/api/v1/project';
     public static $place_order_url = '/api/v1/order';
