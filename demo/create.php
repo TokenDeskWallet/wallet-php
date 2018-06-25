@@ -183,14 +183,24 @@
                        type="email">
             </div>
 
+            <?php if($project->data->blockchain_type == 'nem'){ ?>
+
             <div class="form-item col-sm-6">
-                <label for="ethereum">ETH wallet address:</label>
+                <label for="nem_address">NEM wallet address:</label>
                 <input class="form-control form-text"
-                       value="" name="ethereum"
-                       id="ethereum"
+                       value="" name="nem_address"
+                       id="nem_address"
                        type="text">
             </div>
-
+            <?php }else{ ?>
+                <div class="form-item col-sm-6">
+                    <label for="ethereum">ETH wallet address:</label>
+                    <input class="form-control form-text"
+                           value="" name="ethereum"
+                           id="ethereum"
+                           type="text">
+                </div>
+            <?php } ?>
             <div class="form-item col-sm-6">
                 <label for="name">Full Name:</label>
                 <input class="form-control form-text"

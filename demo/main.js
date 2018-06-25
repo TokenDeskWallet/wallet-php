@@ -27,7 +27,14 @@ jQuery(document).ready(function ($) {
             $('.tab1').hide();
             $("#email").prop('required', true);
             $("#name").prop('required', true);
-            $("#ethereum").prop('required', true);
+            if ($("#ethereum").length > 0) {
+                $("#ethereum").prop('required', true);
+            }
+
+            if ($("#nem_address").length > 0) {
+                $("#nem_address").prop('required', true);
+            }
+
 
 
             if ($("input[name='paymentMethod']:checked").val() == 'direct_pay') {
@@ -58,7 +65,7 @@ jQuery(document).ready(function ($) {
     $(".submit-form").click(function (e) {
 
         if($('.buy-tokens-form')[0].checkValidity()){
-            if(validateInputAddresses($("#ethereum").val())){
+            if ($("#ethereum").length==0 || validateInputAddresses($("#ethereum").val())) {
                 $(".order-create-submit").click();
             }else{
                 $("#ethereum").addClass('parsley-error');

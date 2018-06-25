@@ -16,6 +16,7 @@ if(!$_POST['submit']){
         'email'            => $_POST["email"],
         'name'             => $_POST["name"],
         'ethereum'         => $_POST["ethereum"],
+        'nem_address'      => $_POST["nem_address"],
         'phone'            => $_POST["phone"],
         'billing_country'  => $_POST["billing_country"],
         'billing_state'    => $_POST["billing_state"],
